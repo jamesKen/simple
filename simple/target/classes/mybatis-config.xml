@@ -16,12 +16,12 @@
             <transactionManager type="JDBC">
                 <property name="" value=""/>
             </transactionManager>
-            <dataSource type="JNDI">
-                <property name="driver" value="oracle.jdbc.OracleDriver"/>
+            <dataSource type="UNPOOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url"
-                          value="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = 10.10.56.58)(PORT = 1521))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = cskhyx)))"/>
-                <property name="username" value="khyx_ecif_dev"/>
-                <property name="password" value="khyx"/>
+                          value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
             </dataSource>
         </environment>
     </environments>

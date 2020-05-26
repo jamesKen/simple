@@ -5,6 +5,6 @@
 
 <mapper namespace="tk.mybatis.simple.mapper.CountryMapper">
     <select id="selectAll" resultType="Country">
-        select * from country
+        select id,countryname,countrycode from country
     </select>
 </mapper>
